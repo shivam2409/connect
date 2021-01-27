@@ -6,26 +6,39 @@
 }
 
 .app_body {
+  /* background-color: #b15ae2; */
+  margin: 10px;
   display: flex;
-  background-color: rgb(27, 100, 122);
+  /* background-color: rgb(27, 100, 122); */
   margin-top: -50px;
   height: 90vh;
   width: 140vh;
   box-shadow: 0px 3px 3px 1px #475454;
+  border-radius: 30px;
 }
 
 /* sidebar component  */
 
 .sidebar {
+  margin-top: 10px;
+  padding: 20px;
+
   display: flex;
   flex-direction: column;
   flex: 1;
+  background-color: #fff3e6;
+
+  /* background-color: #b15ae2; */
+  /* border-radius: 15px; */
 }
 .sidebar_header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  border-right: 1px solid lightgray;
+  padding: 5px;
+
+  border-right: 1px solid #fff3e6;
+  background-color: #b15ae2;
+  border-radius: 15px;
 }
 
 .sidebar_headerRight {
@@ -38,18 +51,20 @@
 .sidebar_search {
   display: flex;
   align-items: center;
-  background-color: #f6f6f6;
+  background-color: #fff3e6;
   height: 39px;
   padding: 10px;
+  margin-top: 10px;
 }
 
 .sidebar_searchContainer {
   display: flex;
   align-items: center;
   background-color: white;
-  width: 100px;
+  width: 260px;
   height: 35px;
   border-radius: 20px;
+  padding-left: 5px;
 }
 
 .sidebar_searchContainer > input {
@@ -67,15 +82,17 @@
   display: flex;
   padding: 20px;
   cursor: pointer;
-  border-bottom: 1px solid #f6f6f6;
+  border-bottom: 1px solid #b15ae2;
+  scroll-behavior: smooth;
 }
 .sidebarChat:hover {
   background-color: #ebebeb;
 }
 
 .sidebar_chats {
+  border-radius: 15px;
   flex: 1;
-  background-color: white;
+  background-color: #b15ae2;
   overflow: scroll;
 }
 
@@ -90,17 +107,23 @@
 
 /* chat component */
 .chat {
+  padding: 10px;
   display: flex;
   flex-direction: column;
   flex: 2;
-  background-color: red;
+  background-color: #fff3e6;
+  padding-top: 20px;
+  margin-top: 10px;
 }
 
 .chat_header {
-  padding: 20px;
+  padding: 5px;
+  border-radius: 15px;
+
   display: flex;
   align-items: center;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #c1a1d3;
+  background-color: #c1a1d3;
 }
 
 .chat_headerInfo {
@@ -117,10 +140,13 @@
 }
 
 .chat_body {
-  /* image for background */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
   flex: 1;
   padding: 30px;
   overflow: scroll;
+  background-color: #cd83f8;
 }
 
 .chat_message {
@@ -162,6 +188,9 @@
 .chat_footer > form {
   flex: 1;
   display: flex;
+  text-decoration: none;
+  border: none;
+  outline-width: 0;
 }
 
 .chat_footer > form > input {
@@ -169,4 +198,6 @@
   border-radius: 30px;
   padding: 10px;
   border: none;
+  text-decoration: none;
+  outline-width: 0;
 }

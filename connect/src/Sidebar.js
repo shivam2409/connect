@@ -11,7 +11,7 @@ export const Sidebar = () => {
   return (
     <div className='sidebar'>
       <div className='sidebar_header'>
-        <Avatar src='' />
+        <Avatar src='' style={{ marginTop: '4px', marginLeft: '5px' }} />
         <div className='sidebar_headerRight'>
           <IconButton>
             <DonutLargeIcon />

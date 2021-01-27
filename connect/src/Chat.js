@@ -12,7 +12,7 @@ export const Chat = () => {
   return (
     <div className='chat'>
       <div className='chat_header'>
-        <Avatar />
+        <Avatar style={{ marginTop: '1px', marginLeft: '5px' }} />
 
         <div className='chat_headerInfo'>
           <h3>Room Name</h3>
